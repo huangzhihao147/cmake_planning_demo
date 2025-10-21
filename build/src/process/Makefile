@@ -90,14 +90,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/CMakeFiles E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/CMakeFiles E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/src/process//CMakeFiles/progress.marks
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/clean
 .PHONY : clean
 
 # The main clean target
@@ -106,57 +106,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named planning_main
+# Convenience name for target.
+src/process/CMakeFiles/process.dir/rule:
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/CMakeFiles/process.dir/rule
+.PHONY : src/process/CMakeFiles/process.dir/rule
 
-# Build rule for target.
-planning_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planning_main
-.PHONY : planning_main
-
-# fast build rule for target.
-planning_main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/planning_main.dir/build.make src/CMakeFiles/planning_main.dir/build
-.PHONY : planning_main/fast
-
-#=============================================================================
-# Target rules for targets named pnc_map
-
-# Build rule for target.
-pnc_map: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pnc_map
-.PHONY : pnc_map
-
-# fast build rule for target.
-pnc_map/fast:
-	$(MAKE) $(MAKESILENT) -f src/pnc_map/CMakeFiles/pnc_map.dir/build.make src/pnc_map/CMakeFiles/pnc_map.dir/build
-.PHONY : pnc_map/fast
-
-#=============================================================================
-# Target rules for targets named process
-
-# Build rule for target.
-process: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 process
+# Convenience name for target.
+process: src/process/CMakeFiles/process.dir/rule
 .PHONY : process
 
 # fast build rule for target.
 process/fast:
-	$(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/build
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/build
 .PHONY : process/fast
+
+process.obj: process.cpp.obj
+.PHONY : process.obj
+
+# target to build an object file
+process.cpp.obj:
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/process.cpp.obj
+.PHONY : process.cpp.obj
+
+process.i: process.cpp.i
+.PHONY : process.i
+
+# target to preprocess a source file
+process.cpp.i:
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/process.cpp.i
+.PHONY : process.cpp.i
+
+process.s: process.cpp.s
+.PHONY : process.s
+
+# target to generate assembly for a file
+process.cpp.s:
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/process.cpp.s
+.PHONY : process.cpp.s
 
 # Help Target
 help:
@@ -166,9 +165,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... planning_main"
-	@echo "... pnc_map"
 	@echo "... process"
+	@echo "... process.obj"
+	@echo "... process.i"
+	@echo "... process.s"
 .PHONY : help
 
 
@@ -180,6 +180,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

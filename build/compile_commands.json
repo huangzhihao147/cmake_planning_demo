@@ -1,0 +1,17 @@
+[
+{
+  "directory": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/src",
+  "command": "D:/mingw64/bin/g++.exe  @CMakeFiles/planning_main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/planning_main.dir/planning_main.cpp.obj -c E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/planning_main.cpp",
+  "file": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/planning_main.cpp"
+},
+{
+  "directory": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/src/pnc_map",
+  "command": "D:/mingw64/bin/g++.exe -Dpnc_map_EXPORTS @CMakeFiles/pnc_map.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/pnc_map.dir/pnc_map.cpp.obj -c E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/pnc_map/pnc_map.cpp",
+  "file": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/pnc_map/pnc_map.cpp"
+},
+{
+  "directory": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/src/process",
+  "command": "D:/mingw64/bin/g++.exe -Dprocess_EXPORTS @CMakeFiles/process.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/process.dir/process.cpp.obj -c E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/process/process.cpp",
+  "file": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/process/process.cpp"
+}
+]
