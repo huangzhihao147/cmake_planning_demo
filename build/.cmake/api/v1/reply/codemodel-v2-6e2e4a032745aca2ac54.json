@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						4
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -35,7 +36,7 @@
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -50,7 +51,7 @@
 					"source" : "src/pnc_map",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -65,7 +66,22 @@
 					"source" : "src/process",
 					"targetIndexes" : 
 					[
-						2
+						3
+					]
+				},
+				{
+					"build" : "test/map_test",
+					"jsonFile" : "directory-test.map_test-Debug-64f4512c0f4e12744e89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "test/map_test",
+					"targetIndexes" : 
+					[
+						0
 					]
 				}
 			],
@@ -75,7 +91,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						4
 					],
 					"directoryIndexes" : 
 					[
@@ -97,7 +114,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -109,7 +126,7 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -121,30 +138,49 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "map_test",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 4,
+					"id" : "map_test::@ceab4b1ca83c6e9a91cf",
+					"jsonFile" : "target-map_test-Debug-7de89948de5696ac395a.json",
+					"name" : "map_test",
+					"projectIndex" : 4
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "planning_main::@145eef247bfb46b6828c",
-					"jsonFile" : "target-planning_main-Debug-d800ba7789ae639b9a56.json",
+					"jsonFile" : "target-planning_main-Debug-d41c383ea2648744701a.json",
 					"name" : "planning_main",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "pnc_map::@252d5772c77a80ef76b0",
-					"jsonFile" : "target-pnc_map-Debug-381a6079de588459a240.json",
+					"jsonFile" : "target-pnc_map-Debug-d3cdb8b05cb52273a2f6.json",
 					"name" : "pnc_map",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "process::@0c136a57587ef2cf0836",
-					"jsonFile" : "target-process-Debug-51c6dd77d237ea06f07c.json",
+					"jsonFile" : "target-process-Debug-b2357e25f79f9748908f.json",
 					"name" : "process",
 					"projectIndex" : 3
 				}

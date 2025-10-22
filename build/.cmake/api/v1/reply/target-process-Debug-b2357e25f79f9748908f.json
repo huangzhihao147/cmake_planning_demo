@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/libpnc_map.dll"
+			"path" : "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/libprocess.dll"
 		},
 		{
-			"path" : "src/pnc_map/libpnc_map.dll.a"
+			"path" : "src/process/libprocess.dll.a"
 		},
 		{
-			"path" : "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/libpnc_map.pdb"
+			"path" : "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/libprocess.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,12 +17,13 @@
 		"commands" : 
 		[
 			"add_library",
+			"target_link_libraries",
 			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
 		[
-			"src/pnc_map/CMakeLists.txt",
+			"src/process/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -37,18 +38,24 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
 				"file" : 1
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 1,
-				"line" : 31,
-				"parent" : 2
+				"line" : 33,
+				"parent" : 3
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 10,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
@@ -68,17 +75,17 @@
 			"defines" : 
 			[
 				{
-					"define" : "pnc_map_EXPORTS"
+					"define" : "process_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "D:/eigen-3.3.8"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/pnc_map"
 				}
 			],
@@ -97,7 +104,14 @@
 			]
 		}
 	],
-	"id" : "pnc_map::@252d5772c77a80ef76b0",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "pnc_map::@252d5772c77a80ef76b0"
+		}
+	],
+	"id" : "process::@0c136a57587ef2cf0836",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -107,18 +121,23 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "../pnc_map/libpnc_map.dll.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "pnc_map",
-	"nameOnDisk" : "libpnc_map.dll",
+	"name" : "process",
+	"nameOnDisk" : "libprocess.dll",
 	"paths" : 
 	{
-		"build" : "src/pnc_map",
-		"source" : "src/pnc_map"
+		"build" : "src/process",
+		"source" : "src/process"
 	},
 	"sourceGroups" : 
 	[
@@ -135,7 +154,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/pnc_map/pnc_map.cpp",
+			"path" : "src/process/process.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

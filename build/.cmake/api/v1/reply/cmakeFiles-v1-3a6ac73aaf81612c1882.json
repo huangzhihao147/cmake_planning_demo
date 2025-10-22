@@ -153,6 +153,53 @@
 		},
 		{
 			"path" : "src/process/CMakeLists.txt"
+		},
+		{
+			"path" : "test/map_test/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.24.0/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Apps/cmake-3.24.0-windows-x86_64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

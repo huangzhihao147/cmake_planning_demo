@@ -13,5 +13,10 @@
   "directory": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/src/process",
   "command": "D:/mingw64/bin/g++.exe -Dprocess_EXPORTS @CMakeFiles/process.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/process.dir/process.cpp.obj -c E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/process/process.cpp",
   "file": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/src/process/process.cpp"
+},
+{
+  "directory": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/test/map_test",
+  "command": "D:/mingw64/bin/g++.exe  @CMakeFiles/map_test.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/map_test.dir/map_test.cpp.obj -c E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/test/map_test/map_test.cpp",
+  "file": "E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/test/map_test/map_test.cpp"
 }
 ]
