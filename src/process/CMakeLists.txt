@@ -11,11 +11,18 @@ target_include_directories(
     PUBLIC
     ${Pnc_Map_Dir}
 )
-target_link_directories(
+target_link_libraries(
     ${PROJECT_NAME}
     PUBLIC
     pnc_map
 )
 
-# ✅ 必须链接 pnc_map 库
-target_link_libraries(${PROJECT_NAME} PRIVATE pnc_map)
+# src/process/CMakeLists.txt
+target_include_directories(process
+    PUBLIC ${EIGEN3_INCLUDE_DIRS}
+)
+
+# target_link_libraries(${PROJECT_NAME}
+# PUBLIC
+# Eigen3::Eigen
+# )

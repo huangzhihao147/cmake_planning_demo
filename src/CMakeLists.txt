@@ -16,11 +16,8 @@ target_include_directories(
     ${Pnc_Map_Dir}
 )
 
-target_link_directories(
+target_link_libraries(
     ${PROJECT_NAME}
     PUBLIC
     process
 )
-
-# ✅ 必须链接 process 库
-target_link_libraries(planning_main PRIVATE process)

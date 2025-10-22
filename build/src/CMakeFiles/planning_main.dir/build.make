@@ -97,6 +97,7 @@ planning_main_EXTERNAL_OBJECTS =
 E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/CMakeFiles/planning_main.dir/planning_main.cpp.obj
 E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/CMakeFiles/planning_main.dir/build.make
 E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/process/libprocess.dll.a
+E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/pnc_map/libpnc_map.dll.a
 E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/CMakeFiles/planning_main.dir/linklibs.rsp
 E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe: src/CMakeFiles/planning_main.dir/objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable E:/hzhcode/vscode/bundle_adjustment/cmake_planning_demo/bin/planning_main.exe"

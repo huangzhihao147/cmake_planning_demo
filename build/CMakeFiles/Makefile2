@@ -131,6 +131,7 @@ src/process/clean: src/process/CMakeFiles/process.dir/clean
 # Target rules for target src/CMakeFiles/planning_main.dir
 
 # All Build rule for target.
+src/CMakeFiles/planning_main.dir/all: src/pnc_map/CMakeFiles/pnc_map.dir/all
 src/CMakeFiles/planning_main.dir/all: src/process/CMakeFiles/process.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/planning_main.dir/build.make src/CMakeFiles/planning_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/planning_main.dir/build.make src/CMakeFiles/planning_main.dir/build
